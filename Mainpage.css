@@ -3,26 +3,33 @@
     padding:0px;
 }
 
-.nav{
+.mainnav{
     background-color:#7ba418;
-    width:100vw;
-    height:10vh; 
-    display:flex;
-    justify-content: space-between;
     position:fixed;
-    z-index:500;
+    top: 0px;
+    z-index:500
+}
+
+.navanchor{
+    color:white;
+    margin-top: 8px;
+    font-family:sans-serif;
+    font-weight:bolder;
+}
+
+.home{
+    display:flex;
+    justify-content:end;
+    font-size: 25px;
+    font-family:"roboto";
+}
+
+.venu1{
+    margin-right:20px;
 }
 
 .vegimg{
     margin-left:100px;
-}
-
-.navcont1{
-    color:white;
-    font-family:sans-serif;
-    display:flex; 
-    justify-content:space-between;
-    margin:10px;  
 }
 
 .favicon{
@@ -40,11 +47,6 @@
     color:white;
     margin:15px;
     padding-right: 15px;
-    text-decoration:none;   
-}
-
-.navanchor{
-    color:white;
     text-decoration:none;   
 }
 
@@ -232,7 +234,86 @@
 
 .lastsectioncont{
     display:flex;
+    justify-content:space-around;
+    text-align: left;
+}
+
+.lastsectionp1{
+    font-family: sans-serif;
+    font-size:17px;
+}
+
+.lastsectionp2{
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.lastsectionp3{
+    color:#7ba418;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+.lastsectionsubcont{
+    text-align:left;
+    margin-left:30px;
+}
+
+.lastsectionimg1cont{
+    height:510px;
+    width:350px;
+    background-color:whitesmoke;
+    margin-right:25px;
+}
+
+.lastsectionimg1cont1{
+    display:flex;
     justify-content:space-between;
+    margin-top:40px;
+    margin-left:15px;
+    margin-right:15px;
+    font-family: "Roboto";
+    font-weight:bold;
+    text-align:left;
+}
+ 
+.lastsectionimg1heading{
+    text-align:left; 
+    margin-left: 15px; 
+    margin-top:30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.mainimgcont{
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.curatedproductsh1{
+    font-weight:bold;
+}
+
+.curatedimagediv{
+    display:flex;
+    justify-content: center;
+    text-align:left;
+}
+
+.cmaindiv{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:150px;
+}
+
+.contacth{
+    font-family:sans-serif;
+    font-size:18px;
+    margin-top:20px;
+    text-align:left;
+    line-height:30px;
 }
 /* transitions part */
 
@@ -249,7 +330,7 @@
     color:black;
 }
 
-.img1:hover,.img2:hover,.img3:hover{
+.img1:hover,.img2:hover,.img3:hover,.lastimg:hover{
     transform:scale(1.10);
     transition-duration:1s;
 }
@@ -269,3 +350,6 @@
     color:#7ba418;
 }
 
+.lastsectionimg1heading:hover{
+    color:#7ba418;
+}
